@@ -1,0 +1,35 @@
+div.login{
+    background-color: purple;
+    height: 100%;
+    min-height: 540px;
+}
+
+div.login button {
+    background-color: red;
+    color: blue;
+    padding: 10px;
+}
+
+div.login button:hover {
+    background-color: rgb(11, 71, 4);
+    color: magenta;
+    font-size: 2em;
+}
+
+div.login input {
+    display: inline;
+    border: 3px dashed chocolate;
+    padding:5px;
+    -webkit-box-shadow: 3px 3px 3px 0px rgb(0,0,255);
+    -moz-box-shadow: 3px 3px 3px 0px rgb(0,0,255);
+    box-shadow: 3px 3px 3px 0px rgb(0,0,255);
+    margin-right: 20px;
+    margin-bottom:30px;
+}
+
+div.login input:hover {
+    border: 3px dashed pink;
+    -webkit-box-shadow: 3px 3px 3px 0px rgb(0,255,0);
+    -moz-box-shadow: 3px 3px 3px 0px rgb(0,255,0);
+    box-shadow: 3px 3px 3px 0px rgb(0,255,0);
+}
