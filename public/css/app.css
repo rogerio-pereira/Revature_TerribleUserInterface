@@ -173,3 +173,29 @@ div.register input:hover {
   box-shadow: 3px 3px 3px 0px lime;
 }
 
+div.dashboard {
+  background-color: lime;
+  color: blue;
+  min-height: 500px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2em;
+}
+
+div.dashboard h1 {
+  color: slateblue;
+}
+
+div.dashboard a {
+  background: #833ab4;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 5px;
+  font-family: "Pacifico", cursive;
+  margin-left: 20px;
+  border: 5px solid red;
+  padding: 0px 20px;
+  color: lime;
+}
+
