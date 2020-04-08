@@ -8,7 +8,7 @@
         @csrf
 
         <input type='text' name='email'>
-        <input type='password' name='email'><br/>
+        <input type='password' name='password'><br/>
 
         <button><i class="fas fa-door-open fa-2x"></i></button>
     </form>

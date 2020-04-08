@@ -1,0 +1,45 @@
+header {
+    background: #a80077;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #66ff00, #a80077);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #66ff00, #a80077); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+
+    margin: 0px;
+}
+
+header a.logo
+{
+    font-family: 'Permanent Marker', cursive;
+    color: yellow;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+header ul.menu
+{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    list-style-type: none;
+}
+
+header ul.menu li
+{
+    display: inline-block;
+}
+
+header ul.menu li a
+{
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 5px;
+
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin-left: 20px;
+    border: 5px solid red;
+    padding: 0px 20px;
+    color:lime;
+}

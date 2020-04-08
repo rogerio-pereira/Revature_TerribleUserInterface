@@ -23,13 +23,24 @@
 <body>
     <div id="app">
         <header>
-            <a href='/'>{{env('APP_NAME')}}</a>
-            <ul>
+            <a href='/' class='logo'>{{env('APP_NAME')}}</a>
+            <ul class='menu'>
                 @guest
-                    <li><a href='/register'>Register</a></li>
-                    <li><a href='/login'>Login</a></li>
+                    <li><a href='/register'><i class="fas fa-file-alt"></i></a></li>
+                    <li><a href='/login'><i class="fas fa-door-open"></i></a></li>
                 @else
                     <li><a href=''>Edit</a></li>
+                    <li>
+                        <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
                 @endguest
             </ul>
         </header>
@@ -38,5 +49,7 @@
             @yield('content')
         </main>
     </div>
+
+    @yield('scripts')
 </body>
 </html>

@@ -1,6 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class='text-center register'>
+        <h1>Register</h1>
+
+        <form method="POST" action="{{ route('register') }}">
+            @csrf
+
+            <input id="name" type="text" name="name" placeholder='Name'/>
+            <input type='text' name='email' placeholder='Email'>
+            <input type='password' name='password' placeholder='Password'><br/>
+
+            <button><i class="fas fa-file-alt fa-2x"></i></button>
+        </form>
+
+        <br/>
+        <a href='/help/register' class='helper'><img src='/img/helper.png'></a>
+    </div>
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -15,7 +33,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">

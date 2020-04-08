@@ -14,7 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Auth::routes();
+//Auth::routes();
+Route::get('login', 'LoginController@index')->name('login.form');
+Route::post('login', 'LoginController@login')->name('login');
+Route::post('logout', 'LogoutController@logout')->name('logout');
+Route::get('error', 'ErrorController@index')->name('error');
+Route::get('register', 'RegisterController@index')->name('register.form');
+Route::post('register', 'RegisterController@store')->name('register');
 
-Route::get('/', 'HomeController@index')->name('index');
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group([
+    'middleware' => 'auth'
+], function() 
+{
+    Route::get('/', 'HomeController@index')->name('index');
+    Route::get('/home', 'HomeController@index')->name('home');
+});
