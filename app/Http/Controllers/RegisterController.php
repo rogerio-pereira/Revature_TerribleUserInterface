@@ -23,6 +23,6 @@ class RegisterController extends Controller
         $data['email_verified_at'] = Carbon::now()->toDateTimeString();
         $data['password'] = bcrypt($data['password']);
         User::create($data);
-        return redirect('/');
+        return redirect()->back();
     }
 }

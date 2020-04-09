@@ -11,7 +11,11 @@ class LoginController extends Controller
 {
     public function index()
     {
-        return view('auth.login');
+        if(Auth::guest())
+            return view('auth.login');
+        else
+            return redirect('/');
+
     }
 
     public function login(LoginRequest $request) 
@@ -26,6 +30,6 @@ class LoginController extends Controller
             return redirect('error');
         }
 
-        return view('home');
+        return redirect('/');
     }
 }

@@ -28,4 +28,6 @@ Route::group([
 {
     Route::get('/', 'HomeController@index')->name('index');
     Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/edit', 'UserController@edit')->name('user.edit');
+    Route::put('/edit', 'UserController@update')->name('user.update');
 });

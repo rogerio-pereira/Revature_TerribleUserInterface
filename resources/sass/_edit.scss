@@ -1,0 +1,26 @@
+div.edit {
+    background-image: url('/img/edit.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+div.edit  h1
+{
+    color: red;
+    font-size: 3em;
+}
+
+div.edit input {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+
+div.edit button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}

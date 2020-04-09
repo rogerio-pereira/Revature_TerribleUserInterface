@@ -199,3 +199,50 @@ div.dashboard a {
   color: lime;
 }
 
+div.dashboard table {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 5px dashed red;
+}
+
+div.dashboard table th {
+  border: 3px solid blue;
+  color: black;
+  font-size: 0.5em;
+  background-color: khaki;
+}
+
+div.dashboard table td {
+  border: 10px dotted fuchsia;
+  text-align: center;
+  color: orange;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+div.edit {
+  background-image: url("/img/edit.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+div.edit h1 {
+  color: red;
+  font-size: 3em;
+}
+
+div.edit input {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
+div.edit button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+

@@ -23,3 +23,25 @@ div.dashboard a {
     padding: 0px 20px;
     color:lime;
 }
+
+div.dashboard table 
+{
+    width: 100%;
+    margin-bottom: 30px;
+    border: 5px dashed red;
+}
+div.dashboard table th
+{
+    border: 3px solid blue;
+    color: black;
+    font-size: .5em;
+    background-color: khaki;
+}
+div.dashboard table td
+{
+    border: 10px dotted fuchsia;
+    text-align: center;
+    color:orange;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
