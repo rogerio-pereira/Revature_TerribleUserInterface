@@ -2,7 +2,7 @@
 
 @section('content')
     <div class='text-center edit'>
-        <h1>Register</h1>
+        <marquee><h1>Edit</h1></marquee>
 
         <form method="POST" action="{{ route('user.update') }}">
             @csrf

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class='text-center login'>
-    <h1>Login</h1>
+    <marquee><h1>Login</h1></marquee>
 
     <form method="POST" action="{{ route('login') }}">
         @csrf

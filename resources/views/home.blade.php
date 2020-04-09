@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="dashboard">
-        <h1 class=text-center>Welcome {{Auth::user()->name}}</h1>
+        <marquee><h1 class=text-center>Welcome {{Auth::user()->name}}</h1></marquee>
         <p>Don't forget to update your age after your birthday.</p>
 
         <table>
