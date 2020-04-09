@@ -14,7 +14,7 @@
             <input type='text' name='phone' placeholder='Phone' class='input'>
             <input type='text' name='age' placeholder='Age' class='input'><br/>
 
-            <button><i class="fas fa-file-alt fa-2x"></i></button>
+            <button>Edit</button>
         </form>
 
         <br/>

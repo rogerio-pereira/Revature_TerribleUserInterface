@@ -21,6 +21,7 @@ Route::post('logout', 'LogoutController@logout')->name('logout');
 Route::get('error', 'ErrorController@index')->name('error');
 Route::get('register', 'RegisterController@index')->name('register.form');
 Route::post('register', 'RegisterController@store')->name('register');
+Route::get('help/{title}', 'HelpController@index')->name('help');
 
 Route::group([
     'middleware' => 'auth'
