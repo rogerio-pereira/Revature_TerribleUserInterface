@@ -30,7 +30,7 @@
                     <li><a href='/register'><i class="fas fa-file-alt"></i></a></li>
                     <li><a href='/login'><i class="fas fa-door-open"></i></a></li>
                 @else
-                    <li><a href=''>Edit</a></li>
+                    <li><a href='/edit'>Edit</a></li>
                     <li>
                         <a href="{{ route('logout') }}"
                         onclick="event.preventDefault();
